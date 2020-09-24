@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_blue"
+    android:id="@+id/contact_card"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/back_blue"
+                android:id="@+id/accountfrg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/suject_ids"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColorHint="@color/linecolor"
+                        android:id="@+id/comments"
+                        android:theme="@style/myTextInputLabel">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patient_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Patient History"
+                            android:textSize="16sp"
+                            android:textColorHint="@color/linecolor"
+                            android:inputType="textMultiLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/pre_existing"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="Pre Existing Conditions"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms"
+                        android:textColor="@color/linecolor"
+                        android:buttonTint="@color/linecolor">
+
+                    </androidx.appcompat.widget.AppCompatCheckBox>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/current_medications"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="Current Medications"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/allergies"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="Allergies"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LifeStyle"
+                        android:textColor="@color/linecolor"
+                        android:buttonTint="@color/linecolor">
+
+                    </androidx.appcompat.widget.AppCompatCheckBox>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Surgical Details"
+                        android:textColor="@color/linecolor"
+                        android:buttonTint="@color/linecolor">
+                    </androidx.appcompat.widget.AppCompatCheckBox>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Upload"
+                            android:textColor="@color/linecolor"
+                            android:layout_weight="1">
+                        </Button>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="2dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/linecolor"
+                                android:text="Max file size 5MB per file.">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/linecolor"
+                                android:text="Supported Formats:-pdf,png,jpeg,txt,odt,doc">
+                            </TextView>
+                        </LinearLayout>
+                        </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_background"></Button>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_blue"
+    android:id="@+id/contact_card"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/luminary_controll"
+            android:id="@+id/card_details">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/cards"
+                android:background="@color/back_blue">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/slivergray"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/suject_ids"
+                            android:layout_marginTop="4dp">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_account_circle_black_24dp">
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="4dp"
+                                android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/subject"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/names"
+                                android:paddingLeft="16dp"
+                                android:text="DOCTOR NAME"
+                                android:layout_weight="1"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                                <TextView
+                                    android:id="@+id/speclist"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/names"
+                                    android:paddingLeft="16dp"
+                                    android:text="Speciality"
+                                    android:layout_weight="1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+                                <TextView
+                                    android:id="@+id/speclist1"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/names"
+                                    android:paddingLeft="16dp"
+                                    android:text="Educational Qualification"
+                                    android:layout_weight="1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/mc_regno"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/speclist1"
+                                    android:paddingLeft="16dp"
+                                    android:text="MCI Registration No"
+                                    android:layout_weight="1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/prof_st"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/mc_regno"
+                                    android:paddingLeft="16dp"
+                                    android:text="Professional Statements"
+                                    android:layout_weight="1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="1">
+                                <TextView
+                                    android:id="@+id/txtlang_known"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/prof_st"
+                                    android:paddingLeft="16dp"
+                                    android:text="Languages Known"
+                                    android:layout_weight="0.5"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"/>
+                                    <TextView
+                                        android:id="@+id/lang_known"
+                                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/prof_st"
+                                        android:paddingLeft="16dp"
+                                        android:text="Languages Known"
+                                        android:layout_weight="0.5"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/years_exp"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/lang_known"
+                                    android:paddingLeft="16dp"
+                                    android:text="Years Of Experience"
+                                    android:layout_weight="1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"/>
+                                <TextView
+                                    android:id="@+id/cons_fee"
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/years_exp"
+                                    android:paddingLeft="16dp"
+                                    android:text="Consultation Fee"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="3dp"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/slivergray"
+                            android:layout_below="@id/suject_ids"/>
+
+                    </RelativeLayout>
+                    <!--                    </LinearLayout>-->
+                </androidx.cardview.widget.CardView>
+                <!--            </com.daimajia.swipe.SwipeLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

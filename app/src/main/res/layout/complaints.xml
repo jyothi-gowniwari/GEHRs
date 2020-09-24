@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_blue"
+    android:id="@+id/contact_card"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:background="@color/back_blue"
+                android:id="@+id/accountfrg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/suject_ids"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Uids"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/doctor_help"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="How you'd like the doctor to help you"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/complaint"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="Complaint"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/duration"
+                            app:ms_arrowSize="16dp"
+                            app:ms_hint="Duration"
+                            app:ms_hintColor="@color/linecolor"
+                            app:ms_baseColor="@color/linecolor"
+                            app:ms_highlightColor="@color/linecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_arrowColor="@color/linecolor"
+                            app:ms_hintTextSize="16sp"
+                            app:ms_floatingLabelColor="@color/linecolor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/button_background"></Button>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>
+
+

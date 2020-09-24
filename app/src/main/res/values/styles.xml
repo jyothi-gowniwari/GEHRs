@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">#000000</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">#000000</item>
+    </style>
+    <style name="AppTheme.EditTextBaseStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">#26B2D1</item>
+        <item name="android:textColor">#FFFF00</item>
+        <item name="colorAccent">#FF00FF</item>
+        <item name="colorControlNormal">#FF0000</item>
+        <item name="colorControlActivated">#00FF00</item>
+        <item name="colorControlHighlight">#0000FF</item>
+    </style>
+
+    <style name="myTextInputLabel" parent="TextAppearance.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorHint">@color/theme</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/theme</item>
+        <item name="colorControlActivated">@color/theme</item>
+    </style>
+
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ic_baseline_star_24</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+
+</resources>

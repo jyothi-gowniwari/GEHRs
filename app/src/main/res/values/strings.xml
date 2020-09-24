@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EHR</string>
+    <string name="verification_code_subtext">Verification code sent to</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="validate">Verify</string>
+    <string name="Loading">Loading</string>
+    <string name="Rs">\u20B9</string>
+</resources>

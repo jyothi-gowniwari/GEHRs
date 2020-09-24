@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    app:layout_anchorGravity="center_horizontal"
+    android:background="@drawable/border_square"
+    android:importantForAutofill="noExcludeDescendants">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/border_square">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:gravity="center_horizontal"
+            android:padding="6dp"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/llProgressBar"
+                layout="@layout/layout_progress_bar_with_text"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/log" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etUsernameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/theme"
+                    android:theme="@style/myTextInputLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/theme"
+                    android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                    android:hint="Registered Mobile Number"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColorHint="@color/theme"
+                    android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:theme="@style/myTextInputLabel"
+                    app:passwordToggleTint="@color/theme"
+                    android:textColorHint="@color/theme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Password"
+                        android:drawableTint="@color/theme"
+                       android:drawableStart="@drawable/ic_round_lock_24"
+                        android:inputType="textPassword"
+                        android:padding="16dp"
+                        android:textColorHint="@color/theme"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp">
+<!--                    <androidx.appcompat.widget.AppCompatCheckBox-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Rember Me"-->
+<!--                        android:paddingLeft="5dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:buttonTint="@color/linecolor"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:id="@+id/rember_me"-->
+<!--                        android:autoLink="all"-->
+<!--                        android:linksClickable="true"-->
+<!--                        android:textColor="@color/linecolor"-->
+<!--                        android:textSize="18sp">-->
+<!--                    </androidx.appcompat.widget.AppCompatCheckBox>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot Password"
+                        android:layout_weight="2"
+                        android:paddingLeft="5dp"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/forgotpassword"
+                        android:autoLink="all"
+                        android:linksClickable="true"
+                        android:textColor="@color/theme"
+                        android:textSize="18sp">
+                    </TextView>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/button_background"
+                    android:text="LOGIN"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR">
+            </TextView>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login With OTP"
+                android:padding="10dp"
+                android:buttonTint="@color/theme"
+                android:textColor="@color/theme"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </CheckBox>
+
+            <Button
+                android:id="@+id/create_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/rectangle_border"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="10dp"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/theme">
+
+                <TextView
+                    android:id="@+id/facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:textColor="@color/white"
+                    android:text="Powered By " />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/gen_logo">
+                </ImageView>
+                <TextView
+                    android:id="@+id/text"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:text=" Genworks Health " />
+
+
+            </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

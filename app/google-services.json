@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "39347656934",
+    "firebase_url": "https://ehr-cd937.firebaseio.com",
+    "project_id": "ehr-cd937",
+    "storage_bucket": "ehr-cd937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39347656934:android:11bf483c8dae2f49388327",
+        "android_client_info": {
+          "package_name": "com.example.ehr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39347656934-neciqu8u9si06nd8s0gkc9kqm6m6motf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC04WL8NeUX_HarUj6B3M3nLwgLA0XtuJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39347656934-neciqu8u9si06nd8s0gkc9kqm6m6motf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

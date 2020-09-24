@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button Focused-->
+    <item android:drawable="@color/theme"
+        android:state_pressed="true" />
+    <!-- Button Default Image-->
+    <item android:drawable="@color/back_blue"/>
+
+</selector>
